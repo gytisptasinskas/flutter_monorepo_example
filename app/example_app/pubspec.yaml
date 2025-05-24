@@ -8,10 +8,15 @@ environment:
   sdk: ^3.7.2
 
 dependencies:
+  authentication:
+    path: ../../feature/authentication
+  dependency_injection:
+    path: ../../utility/dependency_injection
+  design_system:
+    path: ../../utility/design_system
+
   flutter:
     sdk: flutter
-
-  cupertino_icons: ^1.0.8
 
 dev_dependencies:
   flutter_test:
