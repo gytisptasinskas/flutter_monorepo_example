@@ -180,14 +180,14 @@ packages:
       path: "../../utility/dependency_injection"
       relative: true
     source: path
-    version: "0.0.1"
+    version: "0.0.2"
   design_system:
     dependency: "direct main"
     description:
       path: "../../utility/design_system"
       relative: true
     source: path
-    version: "0.0.1"
+    version: "0.0.2"
   equatable:
     dependency: "direct main"
     description:
@@ -202,7 +202,7 @@ packages:
       path: "../../utility/event_bus"
       relative: true
     source: path
-    version: "0.0.1"
+    version: "0.0.2"
   fake_async:
     dependency: transitive
     description:
@@ -424,7 +424,7 @@ packages:
       path: "../../utility/linting"
       relative: true
     source: path
-    version: "0.1.0"
+    version: "0.1.1"
   logging:
     dependency: transitive
     description:
@@ -732,7 +732,7 @@ packages:
       path: "../../utility/storage"
       relative: true
     source: path
-    version: "0.0.1"
+    version: "0.0.2"
   stream_channel:
     dependency: transitive
     description:

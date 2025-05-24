@@ -89,7 +89,7 @@ packages:
       path: "../linting"
       relative: true
     source: path
-    version: "0.1.0"
+    version: "0.1.1"
   matcher:
     dependency: transitive
     description:
