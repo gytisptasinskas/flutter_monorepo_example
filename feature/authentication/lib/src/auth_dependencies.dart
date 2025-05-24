@@ -19,7 +19,6 @@ class AuthDependencies extends StatefulWidget {
 class _AuthDependenciesState extends State<AuthDependencies>
     with DependencyScope {
   @override
-  @override
   void registerDependencies() {
     locator
       ..registerSingleton<GeneralStorage>(GeneralStorage())
