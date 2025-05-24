@@ -1,4 +1,12 @@
-# melos_managed_dependency_overrides: linting
+# melos_managed_dependency_overrides: linting,authentication,dependency_injection,design_system,storage
 dependency_overrides:
   linting:
     path: ../../utility/linting
+  authentication:
+    path: ../../feature/authentication
+  dependency_injection:
+    path: ../../utility/dependency_injection
+  design_system:
+    path: ../../utility/design_system
+  storage:
+    path: ../../utility/storage

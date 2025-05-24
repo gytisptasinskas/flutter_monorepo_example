@@ -418,7 +418,7 @@ packages:
     source: hosted
     version: "1.12.1"
   storage:
-    dependency: transitive
+    dependency: "direct overridden"
     description:
       path: "../../utility/storage"
       relative: true
