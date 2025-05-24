@@ -1,0 +1,19 @@
+name: event_bus
+description: "A new Flutter package project."
+version: 0.0.2
+publish_to: "none"
+
+environment:
+  sdk: ^3.7.2
+  flutter: ">=1.17.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  rxdart: ^0.28.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  linting:
+    path: ../../utility/linting
