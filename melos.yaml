@@ -5,7 +5,13 @@ packages:
   - feature/**
   - package/**
   - utility/**
-
+  
+command:
+  version:
+    releaseUrl: true
+    linkToCommits: true
+    updateGitTagRefs: true
+    
 scripts:
   analyze:
     run: melos exec -- flutter analyze .

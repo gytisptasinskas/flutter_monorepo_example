@@ -1,9 +1,11 @@
-# melos_managed_dependency_overrides: design_system,linting,storage,dependency_injection
+# melos_managed_dependency_overrides: design_system,linting,storage,dependency_injection,event_bus
 dependency_overrides:
   dependency_injection:
     path: ../../utility/dependency_injection
   design_system:
     path: ../../utility/design_system
+  event_bus:
+    path: ../../utility/event_bus
   linting:
     path: ../../utility/linting
   storage:
