@@ -1,0 +1,66 @@
+# This file configures the analyzer, which statically analyzes Dart code to
+# check for errors, warnings, and lints.
+
+# The following line enables all_lints.yaml where all linting rules are stored
+# For how to update lints, go to all_lints.yaml for documentation
+# If you want to disable a specific rule, you can do it below in the linter rules section
+include: all_lints.yaml
+
+analyzer:
+  language:
+    strict-casts: true
+    strict-raw-types: true
+  errors:
+    # treat missing required parameters as a warning (not a hint)
+    missing_required_param: warning
+    # treat missing returns as a warning (not a hint)
+    missing_return: warning
+    # allow having TODOs in the code
+    todo: ignore
+    included_file_warning: ignore
+  exclude:
+    - "bin/cache/**"
+    # Ignore protoc generated files
+    - "lib/common/utils/localization/generated/*"
+    - "lib/generated_plugin_registrant.dart"
+    - "lib/src/http/**"
+    - "lib/**/*.g.dart"
+    - "test/**/*.mocks.dart"
+
+linter:
+  rules:
+    # CONFLICTING RULES
+    # Type specification
+    always_specify_types: false # promotes unnecessary redundancy, maybe we should talk about this rule?, conflicts with omit_local_variable_types,
+    avoid_types_on_closure_parameters: false # maybe we should talk about this rule?
+    omit_local_variable_types: false
+    # Final and const usage
+    prefer_final_fields: true
+    prefer_final_parameters: false # parameter_assignments already covers it
+    avoid_final_parameters: false
+    prefer_final_locals: true
+    unnecessary_final: false
+    # Quote preferences
+    prefer_single_quotes: true
+    prefer_double_quotes: false
+    # Imports
+    always_use_package_imports: true
+    prefer_relative_imports: false
+
+    # DISABLED RULES
+    # Rules we decided to not use
+    avoid_annotating_with_dynamic: false # we decided this is not necessary
+    do_not_use_environment: false # we have no good alternative which allow us to pass sensitive config to the app via Github action secrets
+    prefer_int_literals: false # this would make some place implicit, which we don't want
+    lines_longer_than_80_chars: false # we currently use line length set to 120
+    specify_nonobvious_local_variable_types: false # experimental
+    implicit_reopen: false # experimental
+    public_member_api_docs: false # this is more useful for packages
+    library_private_types_in_public_api: false # this is more useful for packages
+    diagnostic_describe_all_properties: false # this is useful to improve debuggability at runtime but adds redundancy
+    discarded_futures: false # this put warnings in tests where they shouldn't be
+    avoid_catches_without_on_clauses: false # this is disabled because if something like a library throws an error, not an exception we still expect to catch it
+    one_member_abstracts: false # this makes code inconsistent with multiple typedefs
+    use_setters_to_change_properties: false # disabled for apps that use mobx for business logic
+    omit_obvious_property_types: false # forces to remove types and make it var which is not what we want
+    omit_obvious_local_variable_types: false # forces to make it var in the for loops
