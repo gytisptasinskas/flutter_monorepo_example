@@ -1,4 +1,4 @@
-name: storage
+name: dependency_injection
 description: "A new Flutter package project."
 version: 0.0.1
 publish_to: 'none'
@@ -10,9 +10,7 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  flutter_secure_storage: ^9.2.4
-  shared_preferences: ^2.5.3
- 
+  get_it: ^8.0.3
 
 dev_dependencies:
   flutter_test:
@@ -20,5 +18,3 @@ dev_dependencies:
   linting:
     path: ../../utility/linting
 
-dependency_overrides:
-  flutter_lints: ^5.0.0
