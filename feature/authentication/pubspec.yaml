@@ -13,6 +13,8 @@ dependencies:
   design_system:
     path: ../../utility/design_system
   equatable: ^2.0.7
+  event_bus:
+    path: ../../utility/event_bus
   flutter:
     sdk: flutter
   flutter_mobx: ^2.3.0

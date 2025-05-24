@@ -1,4 +1,4 @@
-name: app_state
+name: event_bus
 description: "A new Flutter package project."
 version: 0.0.1
 publish_to: "none"
@@ -10,10 +10,7 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  mobx: ^2.5.0
-  flutter_mobx: ^2.3.0
-  storage:
-    path: ../../utility/storage
+  rxdart: ^0.28.0
 
 dev_dependencies:
   flutter_test:

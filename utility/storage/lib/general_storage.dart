@@ -6,4 +6,9 @@ class GeneralStorage {
 
   Future<void> saveUserLoginStatus({required bool isLoggedIn}) =>
       _sharedPreferences.setBool(StorageKeys.isLoggedIn, isLoggedIn);
+
+  Future<bool> getUserLoginStatus() async {
+    final isLoggedIn = await _sharedPreferences.getBool(StorageKeys.isLoggedIn);
+    return isLoggedIn ?? false;
+  }
 }

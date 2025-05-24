@@ -1,0 +1,6 @@
+# melos_managed_dependency_overrides: linting,storage
+dependency_overrides:
+  linting:
+    path: ../../utility/linting
+  storage:
+    path: ../../utility/storage

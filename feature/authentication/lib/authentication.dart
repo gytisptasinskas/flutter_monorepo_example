@@ -1,5 +1,5 @@
-/// A Calculator.
-class Calculator {
-  /// Returns [value] plus 1.
-  int addOne(int value) => value + 1;
-}
+/// Authentication feature library
+library;
+
+export 'src/auth_dependencies.dart';
+export 'src/login_screen.dart';
