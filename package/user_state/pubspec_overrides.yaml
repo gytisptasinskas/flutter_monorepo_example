@@ -1,0 +1,10 @@
+# melos_managed_dependency_overrides: domain,linting,storage,dependency_injection
+dependency_overrides:
+  dependency_injection:
+    path: ../../utility/dependency_injection
+  domain:
+    path: ../domain
+  linting:
+    path: ../../utility/linting
+  storage:
+    path: ../../utility/storage
